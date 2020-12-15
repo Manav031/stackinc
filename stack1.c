@@ -39,7 +39,7 @@ void push(struct stack1 *s, int v) {
     {
         s->top++;
         s->a[s->top] = v;
-        // printf("value inserted\n");
+        printf("value inserted\n");
     }
 }
 
@@ -53,7 +53,7 @@ void pop(struct stack1 *s) {
         int gv;
         gv = s->a[s->top];
         s->top--;
-        // printf("value deleted was %d", gv);
+        printf("value deleted was %d", gv);
     }
 }
 
@@ -92,12 +92,12 @@ void main() {
     s->top = -1;
     s->size = 100;
     s->a = (int *) malloc(s->size * sizeof(int));
-    // push(s,10);
-    // push(s,20);
-    // push(s,30);
-    // push(s,40);
-    // push(s,50);
-    // display(s);
-    // peek(s);
-    // display(s);
+    push(s,10);
+    push(s,20);
+    push(s,30);
+    push(s,40);
+    push(s,50);
+    display(s);
+    peek(s);
+    display(s);
 }
